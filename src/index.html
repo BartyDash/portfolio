@@ -12,13 +12,17 @@
         rel="stylesheet">
 </head>
 
-<body class="font-dm_sans">
-    <main>
-        <header>
-            <img class="w-10 h-10" src="./images/header-img.svg" alt="">
-            <p>Bartosz Głowacki</p>
-            <p>Frontend developer</p>
-            <nav>
+<body class="font-dm_sans bg-bg text-white">
+    <main class="px-4">
+        <header class="max-w-mywidth mx-auto py-6">
+            <div class="flex gap-4 items-center">
+                <img class="w-10 h-10" src="./images/header-img.svg" alt="">
+                <div>
+                    <p class="text-xl font-bold text-primary">Bartosz Głowacki</p>
+                    <p class="text-xs text-white opacity-40 uppercase tracking-wider">Frontend developer</p>
+                </div>
+            </div>
+            <nav class="hidden">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -28,18 +32,26 @@
                 </ul>
             </nav>
         </header>
-        <section id="about">
-            <h1>My name is Maciek and I'm an aspiring Frontend developer and a keen Star Wars fan.</h1>
-            <p>
-                You might be interested in checking the list of my skills. Don't forget to have a glimpse at my
-                projects.
-                I'm looking for a new challenges so if you have one - contact me 😊
+        <section id="about" class="max-w-mywidth mx-auto mb-20">
+            <img class="w-full mb-5" src="./images/profile.png" alt="Bartek Głowacki.">
+            <h1 class="text-2xl font-bold mb-4 tracking-tighter">My name is Maciek and I'm an aspiring <span
+                    class="text-primary">Frontend developer</span> and a keen Star Wars fan.</h1>
+            <p class="text-gray-400 mb-8">
+                You might be interested in checking the list of my <a class="text-white" href="#skills">skills</a>.
+                Don't forget to have a glimpse at my
+                <a class="text-white" href="#projects">projects</a>.
+                I'm looking for a new challenges so if you have one - <a class="text-white" href="#contact">contact
+                    me</a> 😊
             </p>
-            <a href="#contact">Get in touch</a>
-            <a href="#skills">Get to know me</a>
+            <div class="flex flex-col items-start gap-4">
+                <a class="bg-primary text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem]"
+                    href="#contact"><img src="./images/message-chat.svg" alt="" class="w-6 h-6">Get in touch</a>
+                <a class="bg-bg text-primary flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] border-lightGray border-2"
+                    href="#skills"><img src="./images/user.svg" alt="" class="w-6 h-6">Get to know me</a>
+            </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="max-w-mywidth mx-auto">
             <h2>MY SKILLS</h2>
             <p>
                 I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I
@@ -88,7 +100,7 @@
             </article>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="max-w-mywidth mx-auto">
             <h2>Recent Projects</h2>
             <p>
                 Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a
@@ -112,7 +124,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="max-w-mywidth mx-auto">
             <h2>After Hours</h2>
             <p>
                 Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse
@@ -151,7 +163,7 @@
             </article>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="max-w-mywidth mx-auto">
             <h2>Let's work together</h2>
             <p>
                 I'm open for new opportunities. <br>If you have one for me we should talk!
