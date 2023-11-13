@@ -36,7 +36,7 @@
             <img class="w-full mb-5" src="./images/profile.png" alt="Bartek Głowacki.">
             <h1 class="text-2xl font-bold mb-4 tracking-tighter">My name is Maciek and I'm an aspiring <span
                     class="text-primary">Frontend developer</span> and a keen Star Wars fan.</h1>
-            <p class="text-gray-400 mb-8">
+            <p class="font-medium text-gray-400 mb-8">
                 You might be interested in checking the list of my <a class="text-white" href="#skills">skills</a>.
                 Don't forget to have a glimpse at my
                 <a class="text-white" href="#projects">projects</a>.
@@ -44,60 +44,62 @@
                     me</a> 😊
             </p>
             <div class="flex flex-col items-start gap-4">
-                <a class="bg-primary text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem]"
+                <a class="bg-primary text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-round10px"
                     href="#contact"><img src="./images/message-chat.svg" alt="" class="w-6 h-6">Get in touch</a>
-                <a class="bg-bg text-primary flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-[0.625rem] border-lightGray border-2"
+                <a class="bg-bg text-primary flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-round10px border-lightGray border-2"
                     href="#skills"><img src="./images/user.svg" alt="" class="w-6 h-6">Get to know me</a>
             </div>
         </section>
 
         <section id="skills" class="max-w-mywidth mx-auto">
-            <h2>MY SKILLS</h2>
-            <p>
+            <h2 class="text-gray-400 text-xl font-bold tracking-wider mb-4">MY SKILLS</h2>
+            <p class="text-2xl font-medium tracking-tight mb-10">
                 I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I
                 can do below!
             </p>
-            <article>
-                <img src="./images/triangle.svg" alt="" class="w-44 h-44">
-                <h3>Working knowledge</h3>
-                <ul>
-                    <li>— Semantic HTML5</li>
-                    <li>— Flexbox</li>
-                    <li>— Markdown</li>
-                    <li>— JS: Local storage</li>
-                    <li>— Figma</li>
-                    <li>— CSS grid</li>
-                    <li>— Forms</li>
-                    <li>— JS: DOM manipulations</li>
-                    <li>— SASS</li>
-                </ul>
-            </article>
-            <article>
-                <img src="./images/circle.svg" alt="" class="w-44 h-44">
-                <h3>Know something about</h3>
-                <ul>
-                    <li>— JavaScript ES6 + features </li>
-                    <li>— CSS animations</li>
-                    <li>— Working with API</li>
-                    <li>— NPM Scripts</li>
-                    <li>— PWA</li>
-                    <li>— Git</li>
-                    <li>— Accessibility</li>
-                </ul>
-            </article>
-            <article>
-                <img src="./images/cubes.svg" alt="" class="w-44 h-44">
-                <h3>Want to learn</h3>
-                <ul>
-                    <li>— React</li>
-                    <li>— Node</li>
-                    <li>— Electron</li>
-                    <li>— SSR</li>
-                    <li>— TypeScript</li>
-                    <li>— Gatsby</li>
-                    <li>— WebSockets</li>
-                </ul>
-            </article>
+            <div class="grid gap-4">
+                <article class="p-5 rounded-round10px bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg">
+                    <img src="./images/triangle.svg" alt="" class="w-44 h-44 mb-10">
+                    <h3 class="pt-3 border-primary border-t-2 text-2xl font-bold tracking-tight mb-3">Working knowledge</h3>
+                    <ul class="text-sm font-medium tracking-tight space-y-2">
+                        <li>— Semantic HTML5</li>
+                        <li>— Flexbox</li>
+                        <li>— Markdown</li>
+                        <li>— JS: Local storage</li>
+                        <li>— Figma</li>
+                        <li>— CSS grid</li>
+                        <li>— Forms</li>
+                        <li>— JS: DOM manipulations</li>
+                        <li>— SASS</li>
+                    </ul>
+                </article>
+                <article class="p-5 rounded-round10px bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg">
+                    <img src="./images/circle.svg" alt="" class="w-44 h-44 mb-10">
+                    <h3 class="pt-3 border-primary border-t-2 text-2xl font-bold tracking-tight mb-3">Know something about</h3>
+                    <ul class="text-sm font-medium tracking-tight space-y-2">
+                        <li>— JavaScript ES6 + features </li>
+                        <li>— CSS animations</li>
+                        <li>— Working with API</li>
+                        <li>— NPM Scripts</li>
+                        <li>— PWA</li>
+                        <li>— Git</li>
+                        <li>— Accessibility</li>
+                    </ul>
+                </article>
+                <article class="p-5 rounded-round10px bg-gradient-to-br from-white/10 to-white/5 shadow-innerlight ring ring-bg">
+                    <img src="./images/cubes.svg" alt="" class="w-44 h-44 mb-10">
+                    <h3 class="pt-3 border-primary border-t-2 text-2xl font-bold tracking-tight mb-3">Want to learn</h3>
+                    <ul class="text-sm font-medium tracking-tight space-y-2">
+                        <li>— React</li>
+                        <li>— Node</li>
+                        <li>— Electron</li>
+                        <li>— SSR</li>
+                        <li>— TypeScript</li>
+                        <li>— Gatsby</li>
+                        <li>— WebSockets</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
         <section id="projects" class="max-w-mywidth mx-auto">
