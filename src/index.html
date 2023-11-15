@@ -14,7 +14,7 @@
 
 <body class="font-dm_sans bg-bg text-white">
     <main class="px-4">
-        <header class="max-w-mywidth mx-auto py-6">
+        <header class="flex justify-between gap-4 max-w-mywidth mx-auto py-6">
             <div class="flex gap-4 items-center">
                 <img class="w-10 h-10" src="./images/header-img.svg" alt="">
                 <div>
@@ -22,13 +22,13 @@
                     <p class="text-xs text-white opacity-40 uppercase tracking-wider">Frontend developer</p>
                 </div>
             </div>
-            <nav class="hidden">
-                <ul>
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-10 font-bold">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a download href="#">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="flex gap-2 items-center" download href="#"><img src="./images/download-icon.svg" alt="" class="w-5 h-5">Resume</a></li>
+                    <li><a class="inline-block bg-primary text-bg rounded-xl px-8 py-3.5" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
