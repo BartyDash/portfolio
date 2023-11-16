@@ -21,12 +21,12 @@ fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
 
       const element = `<article class="rounded-round20px bg-gradient-to-br from-white/10 to-white/5 flex flex-col h-full">
         <div
-            class="border-b border-bg h-11 p-4 flex gap-1.5 shadow-innerlight rounded-t-round20px bg-gradient-to-br from-white/10 to-white/5">
+            class="h-11 p-4 flex gap-1.5 shadow-innerlight rounded-t-round20px bg-gradient-to-br from-white/10 to-white/5 ring-1 ring-inset ring-bg">
             <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
             <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
             <span class="w-3 h-3 block rounded-full bg-bg opacity-50"></span>
         </div>
-        <div class="p-5 md:p-6 lg:p-10 flex-col justify-between grow">
+        <div class="p-5 md:p-6 lg:p-10 flex flex-col justify-between grow ring-1 ring-inset ring-bg">
           <div>
             <header class="flex gap-4 items-center mb-4">
                 <h3 class="text-2xl leading-none font-bold">${name}</h3>
