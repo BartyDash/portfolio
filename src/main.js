@@ -7,6 +7,8 @@ const projectsContainer = document.querySelector(".projects--js");
 const username = "bartydash";
 const sort = "desc";
 
+console.log("Hello there! Up for a chat? Message me at mymail@gmail.com! 😊");//later complete email!
+
 fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
   .then((response) => response.json())
   .then((response) => {
@@ -41,9 +43,9 @@ fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
             </ul>
           </div>
             <div class="flex flex-col flex-wrap md:flex-row gap-4 items-start">
-                <a class="bg-bg text-primary flex gap-2 font-bold py-4 px-5 items-center rounded-round10px md:rounded-xl md:text-xl border-lightGray border-2 hover:border-primary transition-colors duration-500"
+                <a class="bg-bg text-primary flex gap-2 font-bold py-4 px-5 items-center rounded-round10px md:rounded-xl md:text-xl border-gray-800 border-2 hover:border-primary transition-colors duration-500"
                     href="${homepage}" target="_blank" rel="noopener noreferrer nofollow"><img src="${demoIcon}" alt="" class="w-6 h-6">View demo</a>
-                <a class="bg-bg text-primary flex gap-2 font-bold py-4 px-5 items-center rounded-round10px md:rounded-xl md:text-xl border-lightGray border-2 hover:border-primary transition-colors duration-500"
+                <a class="bg-bg text-primary flex gap-2 font-bold py-4 px-5 items-center rounded-round10px md:rounded-xl md:text-xl border-gray-800 border-2 hover:border-primary transition-colors duration-500"
                     href="${html_url}" target="_blank" rel="noopener noreferrer nofollow"><img src="${githubIcon}" alt="" class="w-6 h-6">Source code</a>
             </div>
         </div>

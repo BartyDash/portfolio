@@ -10,8 +10,7 @@ module.exports = {
       },
       colors: {
         bg: '#020916',
-        primary: {DEFAULT: '#81FF7E', 400: '#50fc5a'},
-        lightGray: '#1F2937'
+        primary: {DEFAULT: '#81FF7E', 400: '#50fc5a'}
       },
       fontFamily: {
         'dm_sans': ['DM Sans', 'sans-serif']
