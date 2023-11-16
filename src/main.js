@@ -15,7 +15,7 @@ fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
 
       let tags = '';
 
-      for (tag of topics) {
+      for (let tag of topics) {
         tags += `<li class="bg-gray-400/10 px-2 py-1 rounded text-sm font-bold">${tag}</li>`;
       }
 
