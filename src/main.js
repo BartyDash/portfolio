@@ -13,7 +13,7 @@ fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
   .then((response) => response.json())
   .then((response) => {
     for (let repository of response) {
-      const { name, html_url, description, stargazers_count, topics, homepage } = repository;
+      const { name, html_url, description, stargazers_count, topics, homepage, fork } = repository;
 
       let tags = '';
 
@@ -50,7 +50,7 @@ fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
             </div>
         </div>
       </article>`;
-      if (homepage) projectsContainer.insertAdjacentHTML("beforeend", element);
+      if (homepage && !fork && description != null) projectsContainer.insertAdjacentHTML("beforeend", element);
     }
   })
   .catch((e) => console.log(e));
