@@ -7,7 +7,7 @@ const projectsContainer = document.querySelector(".projects--js");
 const username = "bartydash";
 const sort = "desc";
 
-console.log("Hello there! Up for a chat? Message me at writetobartek@gmail.com! 😊");//later complete email!
+console.log("Hello there! Up for a chat? Message me at writetobartek@gmail.com! 😊");//later complete email!- completed
 
 fetch(`https://api.github.com/users/${username}/repos?sort=${sort}`)
   .then((response) => response.json())
